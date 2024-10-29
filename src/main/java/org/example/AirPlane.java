@@ -37,7 +37,13 @@ public class AirPlane {
     }
 
     public boolean isLetters(String name) {
-        return name.matches("^[A-Za-z-]+$");
+        char[] chars = name.toCharArray();
+        for (char c : chars) {
+            if (!Character.isLetter(c) && c != '-' && c != '`') {
+                return false;
+            }
+        }
+        return true;
     }
 
     public boolean isValidNumber(String number) {
