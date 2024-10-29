@@ -1,5 +1,6 @@
 # Laba3_Java
 Make class "Airplane" with at least 5 fields.
+Шлях до файлу: src/main/java/org/example -> AirPlane.java
 
 
 1. Створюємо клас "AirPlane".
