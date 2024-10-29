@@ -111,7 +111,7 @@ public class AirPlane {
         while (mainMenu) {
             System.out.print("How many airplane's records do you want to add? ");
             int records = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             for (int i = 0; i < records; i++) {
                 System.out.println("Enter the type of airplane: ");
@@ -122,7 +122,7 @@ public class AirPlane {
                 String number = scanner.nextLine();
                 System.out.println("Enter the capacity: ");
                 int capacity = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine();
                 System.out.println("Enter the color: ");
                 String color = scanner.nextLine();
                 System.out.println("Enter the pilot name: ");
@@ -136,7 +136,7 @@ public class AirPlane {
 
             System.out.print("Do you want to add more airplane's records?\n1. Yes\n2. Exit\n");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             if (choice != 1) {
                 mainMenu = false;
